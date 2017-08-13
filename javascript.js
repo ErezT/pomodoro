@@ -11,6 +11,7 @@ function showTime() {
         console.log(now.second() + ":" + now.minute());
         stopper();
         console.log("stopped");
+        alert("ring ring");
     } else {
         console.log(now.subtract(1, 'seconds').format("mm:ss"));
         onScreenClock.innerHTML = now.format('mm:ss');
