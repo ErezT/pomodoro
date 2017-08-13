@@ -9,16 +9,16 @@
 <title>Pomodoro clock</title>
 
 <body>
-    <div class="w3-container">
-        <div class="w3-container w3-gray w3-display-middle">
-
-            <button class="w3-btn w3-border w3-display-topleft" onclick="starter()">start</button>
-            <button class="w3-btn w3-border w3-display-topmiddle" onclick="stopper()">stop</button>
-            <button class="w3-btn w3-border w3-display-topright" onclick="reseter()">reset</button>
-            <p id="time" class="w3-container">25:00</p>
-
-            <button class="w3-btn w3-border w3-display-bottomleft" onclick="addTime()">+</button>
-            <button class="w3-btn w3-border w3-display-bottomright" onclick="subtractTime()">-</button>
+    <div  class="w3-container">
+        <div id="main" class="w3-container w3-gray w3-display-middle w3-cell">
+            <div class="w3-bar">
+            <button class="w3-bar-item w3-button w3-border w3-display-topleft w3-border-black" onclick="starter()">start</button>
+            <button class="w3-bar-item w3-button w3-border w3-display-topmiddle w3-border-black" onclick="stopper()">stop</button>
+            <button class="w3-bar-item w3-button w3-border w3-display-topright w3-border-black" onclick="reseter()">reset</button>
+            </div>
+            <p id="time" >25:00</p>
+            <button class="w3-button w3-border w3-display-bottomleft w3-border-black" onclick="addTime()">+</button>
+            <button class="w3-button w3-border w3-display-bottomright w3-border-black" onclick="subtractTime()">-</button>
         </div>
     </div>
 
