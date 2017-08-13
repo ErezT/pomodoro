@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <link rel="stylesheet" href="w3.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
-    </head>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="w3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+</head>
 <title>Pomodoro clock</title>
+
 <body>
-<div>
-    
-    <button class="w3-btn w3-border" onclick="starter()">start</button>
-    <button class="w3-btn w3-border" onclick="stopper()">stop</button>
-    <button class="w3-btn w3-border" onclick="reseter()">reset</button>
-    <p id="time"></p>
+    <div class="w3-container">
+        <div class="w3-container w3-gray w3-display-middle">
 
-    <button class="w3-btn w3-border" onclick="addTime()">+</button>
-    <button class="w3-btn w3-border" onclick="subtractTime()">-</button>
-</div>
+            <button class="w3-btn w3-border w3-display-topleft" onclick="starter()">start</button>
+            <button class="w3-btn w3-border w3-display-topmiddle" onclick="stopper()">stop</button>
+            <button class="w3-btn w3-border w3-display-topright" onclick="reseter()">reset</button>
+            <p id="time" class="w3-container">25:00</p>
 
-<script src="javascript.js"></script>
+            <button class="w3-btn w3-border w3-display-bottomleft" onclick="addTime()">+</button>
+            <button class="w3-btn w3-border w3-display-bottomright" onclick="subtractTime()">-</button>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
 </body>
+
 </html>
